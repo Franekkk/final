@@ -33,7 +33,7 @@
 
 		<article>
 
-			<form action="" method="POST">
+			<form action="order.php" method="POST" enctype="multipart/form-data">
 				<div class="row">
 					<fieldset>
 						<legend>Rodzaj pdwozia</legend>
@@ -145,11 +145,24 @@
 							<label>Ile kluczyków <input type="number" name="kluczyk" step="1"></label>
 
 						</div>
+
 						<div class="row">
 							<input type="submit" value="zamawiam">
 
 
 						</div>
+						<div class="row"><label>Przzeslij zdjecie poprzedniego samochodu</label> <input type="file"
+								name="obraz" accept="image/x-png,image/gif,iage/jpeg" multiple> </div>
+
+
+						<div class="row">
+							<label>Kolor lakkieru<input type="color" name="kolor" step="1"></label>
+
+						</div>
+
+						<div class="row"><label>Stopien realizacji zamowienia </label><progress max="100" value="25">
+							</progress> </div>
+
 			</form>
 
 		</article>

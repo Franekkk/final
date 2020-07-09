@@ -109,15 +109,15 @@
 
 				</div>
 				<div class="row">
-					<label>Adres e-mail <input type="email" name="adres"></label>
-					<label>numer telefonu <input type="tel" name="telefon"></label>
+					<label>Adres e-mail <input type="email" name="adres" required></label>
+					<label>numer telefonu <input type="tel" name="telefon" required></label>
 
 
 
 				</div>
 				<div class="row">
 					<label>data dostawy <input type="date" name="dzień"></label>
-					<label>preferowany czas dostawy<input type="time" name="czas"></label>
+					<label>preferowany czas dostawy<input type="time" name="czas" value="18:00" readonly></label>
 
 
 
@@ -146,11 +146,7 @@
 
 						</div>
 
-						<div class="row">
-							<input type="submit" value="zamawiam">
 
-
-						</div>
 						<div class="row"><label>Przzeslij zdjecie poprzedniego samochodu</label> <input type="file"
 								name="obraz" accept="image/x-png,image/gif,iage/jpeg" multiple> </div>
 
@@ -162,6 +158,23 @@
 
 						<div class="row"><label>Stopien realizacji zamowienia </label><progress max="100" value="25">
 							</progress> </div>
+
+						<div class="row">
+							<label>Stopień zatankowania samochodu</label><meter min="0" max="100" title="procent"
+								value="40" low="30" high="70" optimum="75"></meter>
+						</div>
+
+						<div class="row">
+							<label>Twoja strona www</label> <input type="url" name="witryna">
+						</div>
+						<input type="hidden" name="token" value="ughsd6327646237">
+
+						<div class="row">
+							<input type="submit" value="zamawiam">
+
+
+						</div>
+
 
 			</form>
 
